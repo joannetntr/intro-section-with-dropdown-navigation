@@ -92,11 +92,9 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ## Your Detail 
 
-- FullName - [Add your name here]
-- StudentID - [Add your StudentID here]
-- BINUS Email - [Add your BINUS email here]
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- FullName - Joanne Tantra
+- StudentID - 260127766
+- BINUS Email - joanne.tantra@binus.ac.id
 
 ## Acknowledgments
 

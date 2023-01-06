@@ -36,10 +36,9 @@ Users should be able to:
 ### Built with
 
 - Semantic HTML5 markup
-- JavaScript
-- CSS Flexbox
-- CSS Grid
-- [Styled Components](https://styled-components.com/) - For styles
+- CSS custom properties
+- Flexbox
+- Javascript
 
 
 ### What I learned
@@ -68,10 +67,13 @@ If you want more help with writing markdown, we'd recommend checking out [The Ma
 
 Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
 
+### Solution
+[URL Solution] - (https://github.com/joannetntr/intro-section-with-dropdown-navigation)
 
 ### Useful resources
 
 - [How to do dropdown navigation](https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp) - This is an amazing scholar article which helped me finally understand. I'd recommend it to anyone still learning this concept.
+- [Responsive HTML & CSS menu](https://www.youtube.com/watch?v=wpGNFGqNfdU) - this video helps me understand the fundamentals. 
 
 
 ## Your Detail 

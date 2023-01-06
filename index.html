@@ -1,97 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
-  <title> Joanne Tantra | Intro section with dropdown navigation</title>
-</head>
-<body>
-  <div class="overlay"></div>
-  <header>
-    <a href="#" aria-label="logo"><img src="./images/logo.svg" alt="snap's logo" class="logo"></a>
-    <div class="menu">
-      <img src="./images/icon-menu.svg" alt="hamburger-icon menu-open" class="open-menu">
-      <img src="./images/icon-close-menu.svg" alt="times-icon menu-close" class="close-menu">
-    </div>
-    <nav>
-      <ul class="nav-links">
-        <li class="nav-link">
-          <a href="#" aria-label="features" class="dropdown">
-            <span>Features</span>
-            <img src="./images/icon-arrow-up.svg" alt="arrow up" class="arrow-up">
-            <img src="./images/icon-arrow-down.svg" alt="arrow down" class="arrow-down">
-          </a>
-          <ul class="dropdown-list">
-            <li class="dropdown-link">
-              <a href="#" aria-label="todo-list">
-                <img src="./images/icon-todo.svg" alt="todo-list icon">
-                <span>Todo List</span>
-              </a>
-            </li>
-            <li class="dropdown-link">
-              <a href="#" aria-label="calender">
-                <img src="./images/icon-calendar.svg" alt="calender icon">
-                <span>Calender</span>
-              </a>
-            </li>
-            <li class="dropdown-link">
-              <a href="#" aria-label="reminders">
-                <img src="./images/icon-reminders.svg" alt="bell icon">
-                <span>Reminders</span>
-              </a>
-            </li>
-            <li class="dropdown-link">
-              <a href="#" aria-label="planning">
-                <img src="./images/icon-planning.svg" alt="clock icon">
-                <span>Planning</span>
-              </a>
-            </li>
-          </ul>
-        </li>
-        <li class="nav-link">
-          <a href="#" aria-label="company" class="dropdown">
-            <span>Company</span>
-            <img src="./images/icon-arrow-up.svg" alt="arrow up" class="arrow-up">
-            <img src="./images/icon-arrow-down.svg" alt="arrow down" class="arrow-down">
-          </a>
-          <ul class="dropdown-list">
-            <li class="dropdown-link"><a href="#" aria-label="history">History</a></li>
-            <li class="dropdown-link"><a href="#" aria-label="our-team">Our Team</a></li>
-            <li class="dropdown-link"><a href="#" aria-label="blog">Blog</a></li>
-          </ul>
-        </li>
-        <li class="nav-link"><a href="#" aria-label="careers">Careers</a></li>
-        <li class="nav-link"><a href="#" aria-label="about">About</a></li>
-      </ul>
-      <div class="registration">
-        <button>Login</button>
-        <button>Register</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Quiz Challenge| Intro section with dropdown navigation</title>
+  </head>
+  <body>
+    <main>
+      <!-- Navigation bar -->
+      <div class="overlay" id="overlay"></div>
+      <nav>
+        <div class="nav-logo-menu-bar">
+          <div class="logo">
+            <img src="images/logo.svg" alt="" />
+          </div>
+          <div class="menu-bar" onClick="openSlideMenu()">
+            <img src="images/icon-menu.svg" alt="open menu" />
+          </div>
+        </div>
+
+        <!-- Hidden on Mobile section starts here -->
+
+        <div class="nav-menu" id="nav-menu">
+          <div class="close-menu-icon" onClick="closeSlideMenu()">
+            <img src="images/icon-close-menu.svg" alt="close menu" />
+          </div>
+
+          <!-- Nav Item Section -->
+          <div class="nav-menu-item-container">
+            <!-- Features -->
+            <div
+              class="features nav-item"
+              onClick="toggleDropdown('features-expanded-list');"
+              tabindex="1"
+            >
+              <p>Features</p>
+              <div class="arrow-img"></div>
+            </div>
+
+            <div class="features-expanded-list" id="features-expanded-list">
+              <div class="features-item-container">
+                <img
+                  src="images/icon-todo.svg"
+                  alt=""
+                  class="features-item-icon"
+                />
+                <p class="features-item">Todo List</p>
+              </div>
+              <div class="features-item-container">
+                <img
+                  src="images/icon-calendar.svg"
+                  alt=""
+                  class="features-item-icon"
+                />
+                <p class="features-item">Calendar</p>
+              </div>
+              <div class="features-item-container">
+                <img
+                  src="images/icon-reminders.svg"
+                  alt=""
+                  class="features-item-icon"
+                />
+                <p class="features-item">Reminders</p>
+              </div>
+              <div class="features-item-container">
+                <img
+                  src="images/icon-planning.svg"
+                  alt=""
+                  class="features-item-icon"
+                />
+                <p class="features-item">Planning</p>
+              </div>
+            </div>
+
+            <!-- Company -->
+            <div
+              class="company nav-item"
+              onClick="toggleDropdown('company-expanded-list');"
+              tabindex="2"
+            >
+              <p>Company</p>
+              <div class="arrow-img"></div>
+            </div>
+
+            <div class="company-expanded-list" id="company-expanded-list">
+              <p class="company-item">History</p>
+              <p class="company-item">Our Team</p>
+              <p class="company-item">Blog</p>
+            </div>
+            <!-- Career -->
+            <div class="nav-item" tabindex="3">
+              <p>Careers</p>
+            </div>
+            <!-- About -->
+            <div class="nav-item" tabindex="4">
+              <p>About</p>
+            </div>
+          </div>
+
+          <!-- Login and Register -->
+          <div class="login-register-container">
+            <button class="login-btn">Login</button>
+            <button class="register-btn">Register</button>
+          </div>
+        </div>
+
+        <!-- Hidden on Mobile section ends here -->
+      </nav>
+      <div class="grid-container">
+        <!-- Illustration -->
+        <div class="illustration"></div>
+
+        <div class="left-container">
+          <!-- Main content -->
+          <div class="main-content">
+            <h1 class="main-heading"><span>Make</span> remote work</h1>
+            <p class="description">
+              Get your team in sync, no matter your location. Streamline
+              processes, create team rituals, and watch productivity soar.
+            </p>
+            <button class="learn-more-btn">Learn more</button>
+          </div>
+
+          <!-- Clients -->
+          <div class="client-section">
+            <img src="images/client-databiz.svg" alt="" class="databiz-logo" />
+            <img
+              src="images/client-audiophile.svg"
+              alt=""
+              class="audiophile-logo"
+            />
+            <img src="images/client-meet.svg" alt="" class="meet-logo" />
+            <img src="images/client-maker.svg" alt="" class="maker-logo" />
+          </div>
+        </div>
       </div>
-    </nav>
-  </header>
-  <main class="container">
-    <picture>
-      <source media="(min-width:465px)" srcset="./images/image-hero-desktop.png">
-      <img src="./images/image-hero-mobile.png" alt="hero image">
-    </picture>
-    <section class="text-content">
-      <h1>Make remote work</h1>
-      <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
-      <button>Learn more</button>
-      <div class="clients">
-        <img src="./images/client-databiz.svg" alt="databiz logo">
-        <img src="./images/client-audiophile.svg" alt="audiophile">
-        <img src="./images/client-meet.svg" alt="meet">
-        <img src="./images/client-maker.svg" alt="maker">
+    </main>
+
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Joanne Tantra</a>.
       </div>
-    </section>
-  </main>
-  <footer>
-    Challenge by <a>Sir Bagus</a>
-    Coded by <a>Joanne</a>.
-  </footer>
-  <script src="app.js"></script>
-</body>
+    </footer>
+    <script src="index.js"></script>
+  </body>
 </html>

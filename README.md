@@ -1,4 +1,4 @@
-# Quiz Challage - Intro section page with interactive dropdown menu
+# Quiz Challenge - Intro section page with interactive dropdown menu
 
 ![Design preview for the Intro section with dropdown navigation coding challenge](./design/desktop-preview.jpg)
 
